@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: 15%;
+        }
+        .loading{
+            position: fixed;
+            
+            width: 100px;
+            height: 100px;
+            
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            
+        }
+        .loading::after{
+            content: "";
+            width: 50%;
+            height: 50%;
+            border: 15px solid rgba(130, 130, 131);
+            border-top-color:  blue;
+            border-radius: 200px;
+            animation: loading 0.75s ease infinite   ;
+        }
+        @keyframes loading{
+            form{transform: rotate(0turn)}
+            to{transform: rotate(1turn);}
+        }
+    </style>
+</head>
+<body>
+    <div class="loading">
+        
+    </div>
+</body>
+</html>
